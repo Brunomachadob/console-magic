@@ -6,3 +6,9 @@ Useful list of console magics
 ```bash
 find . -name '*.java' -exec grep -Eohr "com\.amazonaws.+Request" {} \; | sort -u
 ```
+
+#### Query for an API server certificates
+
+```bash
+openssl s_client -showcerts -connect gnupg.org:443
+```
